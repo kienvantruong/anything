@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .color-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 20px auto;
+            transition: background-color 0.3s ease;
+        }
+        .color-box:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change Color Example</h1>
+    <div class="color-box"></div>
+    <p>Hover over the box to change its color.</p>
+    <script>
+        // JavaScript can be added here if needed for additional functionality
+        document.querySelector('.color-box').addEventListener('click', function() {
+            this.style.backgroundColor = this.style.backgroundColor === 'blue' ? 'red' : 'blue';
+        });
+    </script>
+</body>
+</html>
